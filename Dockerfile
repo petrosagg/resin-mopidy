@@ -7,7 +7,9 @@ RUN wget -q -O - http://apt.mopidy.com/mopidy.gpg | apt-key add - \
     gstreamer0.10-plugins-bad \
     mopidy \
     mopidy-soundcloud \
-    mopidy-spotify
+    mopidy-spotify \
+    python-pip \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN pip install Mopidy-Youtube
 
