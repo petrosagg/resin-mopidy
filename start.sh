@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir -p /.config/mopidy
+mkdir -p /root/.config/mopidy
 
-MOPIDY_CONFIG='/.config/mopidy/mopidy.conf'
+MOPIDY_CONFIG='/root/.config/mopidy/mopidy.conf'
 
 touch "$MOPIDY_CONFIG"
 
