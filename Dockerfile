@@ -4,8 +4,8 @@ RUN wget -q -O - http://apt.mopidy.com/mopidy.gpg | apt-key add - \
   && wget -q -O /etc/apt/sources.list.d/mopidy.list http://apt.mopidy.com/mopidy.list \
   && apt-get update \
   && apt-get install -y --no-install-recommends \
-    gstreamer0.10-alsa \
-    gstreamer0.10-plugins-bad \
+    gstreamer1.0-alsa \
+    gstreamer1.0-plugins-bad \
     mopidy \
     mopidy-soundcloud \
     mopidy-spotify \
